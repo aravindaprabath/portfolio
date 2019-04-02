@@ -1,23 +1,11 @@
-.aravindas-house {
-  background-color: red; }
-  .aravindas-house__aravindas-room {
-    background-color: blue; }
-    .aravindas-house__aravindas-room--lightOn {
-      background-color: greenyellow; }
-    .aravindas-house__aravindas-room--lightOff {
-      background-color: black; }
-  .aravindas-house__power-cut:active ~ .aravindas-house__aravindas-room {
-    display: none; }
-
-.aravindas-house {
-  background-color: red; }
-  .aravindas-house__aravindas-room {
-    background-color: blue; }
-    .aravindas-house__aravindas-room--lightOn {
-      background-color: greenyellow; }
-    .aravindas-house__aravindas-room--lightOff {
-      background-color: black; }
-  .aravindas-house--power-cut:active .aravindas-house__aravindas-room {
-    display: none; }
+.main-wrapper {
+  width: auto;
+  height: 100vh;
+  border: 1px solid red;
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, minmax());
+}
 
 /*# sourceMappingURL=app.css.map */

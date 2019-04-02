@@ -1,0 +1,12 @@
+<<<<<<< HEAD
+=======
+.main-wrapper {
+  width                : auto;
+  height               : 100vh;
+  border               : 1px solid red;
+  margin               : 0 5rem;
+  display              : grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows   : repeat(10, minmax());
+}
+>>>>>>> 04cab6c603ef632b37c0d9a3b170323920e44759

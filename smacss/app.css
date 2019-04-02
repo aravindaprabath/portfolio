@@ -2,10 +2,13 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
 @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i");
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
+=======
+>>>>>>> 04cab6c603ef632b37c0d9a3b170323920e44759
 html,
 body,
 div,
@@ -130,6 +133,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+<<<<<<< HEAD
 /* Primary Colors */
 /* Colors */
 /* Backgrounds */
@@ -231,6 +235,18 @@ hr {
 
 .footer {
   height: 100%; }
+=======
+.main-wrapper {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid red;
+  margin: 0 5rem; }
+
+.main-wrapper {
+  border: 1px solid red;
+  width: 10px;
+  height: 10px; }
+>>>>>>> 04cab6c603ef632b37c0d9a3b170323920e44759
 
 .profile {
   width: 100%;

@@ -1,17 +1,4 @@
-// Menu Bar
-.menu-bar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 1em;
-    background: white;
-    
-}
-
-.main-container {
-    
-}
-
-.footer {
-    height: 100%;
+.main-wrapper {
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows   : repeat(10, minmax(5rem,1fr));
 }

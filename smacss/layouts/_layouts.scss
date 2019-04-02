@@ -1,4 +1,5 @@
 .main-wrapper {
-  grid-template-columns: repeat(10,1fr);
-  grid-template-rows   : repeat(10, minmax(5rem,1fr));
+  border: 1px solid red;
+  width : 10px;
+  height: 10px;
 }

@@ -1,5 +1,9 @@
 .main-wrapper {
-  border: 1px solid red;
-  width : 10px;
-  height: 10px;
+  width                : auto;
+  height               : 100vh;
+  border               : 1px solid red;
+  margin               : 0 5rem;
+  display              : grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows   : repeat(10, minmax());
 }

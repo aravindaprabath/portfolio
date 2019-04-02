@@ -1,294 +1,84 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
+/*
+Error: Invalid CSS after "...r 1px solid red": expected "{", was ";"
+        on line 14 of D:/portfolio/smacss/layouts/_layouts.scss
+        from line 1 of D:/portfolio/smacss/layouts/_index.scss
+        from line 3 of D:\portfolio\smacss\app.scss
+
+9:   border               : 1px solid red;
+10: }
+11: 
+12: .name {
+13:   background: red;
+14:   border 1px solid red;
+15: }
+
+Backtrace:
+D:/portfolio/smacss/layouts/_layouts.scss:14
+D:/portfolio/smacss/layouts/_index.scss:1
+D:\portfolio\smacss\app.scss:3
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:677:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:747:in `declaration_or_ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:678:in `block'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/scss/parser.rb:41:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:414:in `_to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:321:in `to_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `block in with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:88:in `with_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+C:/Program Files (x86)/Koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+C:/Program Files (x86)/Koala/bin/sass:22:in `load'
+C:/Program Files (x86)/Koala/bin/sass:22:in `<main>'
 */
-<<<<<<< HEAD
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400i");
-@import url("https://fonts.googleapis.com/css?family=Lobster");
-@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
-=======
->>>>>>> 04cab6c603ef632b37c0d9a3b170323920e44759
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block; }
-
-body {
-  line-height: 1; }
-
-ol,
-ul {
-  list-style: none; }
-
-blockquote,
-q {
-  quotes: none; }
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-<<<<<<< HEAD
-/* Primary Colors */
-/* Colors */
-/* Backgrounds */
-/* Border colors  
-*/
-/* Fills for SVG */
-/* Strokes for SVG */
-.component-name {
-  font-size: 1rem;
-  border-bottom: 1px solid #AAAAAA;
-  margin-top: 4em;
-  padding-bottom: 1em;
-  color: #AAAAAA;
-  margin-bottom: 2em; }
-
-.content-break-line {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  height: 9em; }
-
-:root {
-  font-size: 13px; }
-  @media screen and (min-width: 576px) {
-    :root {
-      font-size: 14px; } }
-  @media screen and (min-width: 768px) {
-    :root {
-      font-size: 15px; } }
-  @media screen and (min-width: 992px) {
-    :root {
-      font-size: 16px; } }
-  @media screen and (min-width: 1200px) {
-    :root {
-      font-size: 17px; } }
-
-body {
-  font-family: 'Roboto', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility; }
-
-h1 {
-  font-size: 3rem;
-  letter-spacing: .03em;
-  line-height: 1.1em;
-  margin: 0 0 .5em;
-  font-weight: 600; }
-
-h2 {
-  font-size: 2rem;
-  letter-spacing: .03em;
-  line-height: 1.2em;
-  margin: 0 0 .5em; }
-
-h3 {
-  font-size: 1.5rem;
-  letter-spacing: .03em;
-  line-height: 1.2em;
-  margin: 0 0 .5em; }
-
-h4 {
-  font-size: 1.3rem;
-  letter-spacing: .03em;
-  line-height: 1.2em;
-  margin: 0 0 .5em; }
-
-p {
-  font-size: 1.1rem;
-  letter-spacing: .03em;
-  line-height: 1.6em;
-  margin: 0 0 .5em; }
-  @media screen and (min-width: 768px) {
-    p {
-      font-size: 1rem;
-      letter-spacing: .03em;
-      line-height: 1.6em; } }
-
-img,
-li,
-a {
-  font-size: 1rem; }
-
-a {
-  color: gray; }
-  a:hover {
-    text-decoration: none; }
-
-hr {
-  border: 1px dotted #AAAAAA;
-  margin: 4rem; }
-
-.menu-bar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  padding: 1em;
-  background: white; }
-
-.footer {
-  height: 100%; }
-=======
-.main-wrapper {
-  width: 100%;
-  height: 100vh;
-  border: 1px solid red;
-  margin: 0 5rem; }
-
-.main-wrapper {
-  border: 1px solid red;
-  width: 10px;
-  height: 10px; }
->>>>>>> 04cab6c603ef632b37c0d9a3b170323920e44759
-
-.profile {
-  width: 100%;
-  height: 100vh;
-  margin-bottom: auto;
-  text-align: center;
-  color: white;
-  background: #441d9c;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center; }
-  @media screen and (min-width: 576px) {
-    .profile {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 1fr;
-      background: #ca0679; } }
-
-.profile-details {
-  grid-column: 1/2;
-  grid-row: 2/3;
-  margin: 2em; }
-  @media screen and (min-width: 576px) {
-    .profile-details {
-      grid-column: 1/2;
-      grid-row: 1/2;
-      margin: 0em 4em;
-      text-align: left; } }
-
-.profile-side-image {
-  grid-column: 1/2;
-  grid-row: 1/2;
-  width: 100%;
-  height: 100%;
-  background-image: url("../images/8.jpeg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
-  @media screen and (min-width: 576px) {
-    .profile-side-image {
-      grid-column: 2/3;
-      grid-row: 1/2; } }
-
-/*# sourceMappingURL=app.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...r 1px solid red\": expected \"{\", was \";\"\A         on line 14 of D:/portfolio/smacss/layouts/_layouts.scss\A         from line 1 of D:/portfolio/smacss/layouts/_index.scss\A         from line 3 of D:\portfolio\smacss\app.scss\A \A 9:   border               : 1px solid red;\A 10: }\A 11: \A 12: .name {\A 13:   background: red;\A 14:   border 1px solid red;\A 15: }"; }

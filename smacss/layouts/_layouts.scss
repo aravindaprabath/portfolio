@@ -1,32 +1,11 @@
 .main-wrapper {
   width                : auto;
   height               : 100vh;
-  border               : 1px solid red;
   margin               : 0;
   display              : grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows   : repeat(10, 1fr);
-  border               : 1px solid red;
+  grid-template-rows   : repeat(10,1fr);
+  // grid-auto-rows       : minmax(100px, 60px);
   grid-gap             : 1rem;
-}
-
-.main-title {
-  border         : 1px solid red;
-  grid-column    : 1/11;
-  grid-row       : 1/1;
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
-}
-
-.test {
-  grid-column    : 2/10;
-  grid-row       : 2/3;
-  transform      : rotate(20deg);
-  background     : black;
-  color          : white;
-  display        : flex;
-  justify-content: center;
-  align-items    : center;
-  border         : 0.5rem solid yellow;
+  background           : black;
 }

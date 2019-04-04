@@ -5,53 +5,30 @@ body {
 .main-wrapper {
   width: auto;
   height: 100vh;
-  border: 1px solid red;
   margin: 0;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  border: 1px solid red;
-  grid-gap: 1rem; }
+  grid-gap: 1rem;
+  background: black; }
 
-.main-title {
-  border: 1px solid red;
-  grid-column: 1/11;
-  grid-row: 1/1;
+.w320-title {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  border: 2px solid #ffc221;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.test {
-  grid-column: 2/10;
-  grid-row: 2/3;
-  transform: rotate(20deg);
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0.5rem solid yellow; }
+.w320-infobox {
+  grid-column: 3/11;
+  grid-row: 2/5;
+  border: 2px solid #ffc221; }
 
-.aravindas-house {
-  background-color: red; }
-  .aravindas-house__aravindas-room {
-    background-color: blue; }
-    .aravindas-house__aravindas-room--lightOn {
-      background-color: greenyellow; }
-    .aravindas-house__aravindas-room--lightOff {
-      background-color: black; }
-  .aravindas-house__power-cut:active ~ .aravindas-house__aravindas-room {
-    display: none; }
-
-.aravindas-house {
-  background-color: red; }
-  .aravindas-house__aravindas-room {
-    background-color: blue; }
-    .aravindas-house__aravindas-room--lightOn {
-      background-color: greenyellow; }
-    .aravindas-house__aravindas-room--lightOff {
-      background-color: black; }
-  .aravindas-house--power-cut:active .aravindas-house__aravindas-room {
-    display: none; }
+.w320-image-holder {
+  grid-column: 5/11;
+  grid-row: 5/11;
+  border: 2px solid #ffc221; }
 
 /*# sourceMappingURL=app.css.map */

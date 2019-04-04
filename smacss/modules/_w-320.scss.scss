@@ -1,0 +1,21 @@
+.w320-title {
+  grid-column    : 1/6;
+  grid-row       : 1/2;
+  border         : 2px solid #ffc221;
+  color          : white;
+  display        : flex;
+  justify-content: center;
+  align-items    : center;
+}
+
+.w320-infobox {
+  grid-column: 3/11;
+  grid-row   : 2/5;
+  border     : 2px solid #ffc221;
+}
+
+.w320-image-holder {
+  grid-column: 5/11;
+  grid-row   : 5/11;
+  border     : 2px solid #ffc221;
+}

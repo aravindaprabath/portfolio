@@ -1,4 +1,13 @@
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
 body {
-  margin : 0;
-  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  margin     : 0;
+  padding    : 0;
+}
+
+div {
+  // border: 1px solid #ff000040;
 }

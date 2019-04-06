@@ -1,21 +1,45 @@
 .w320-title {
-  grid-column    : 1/6;
+  grid-column    : 1/11;
   grid-row       : 1/2;
-  border         : 2px solid #ffc221;
   color          : white;
   display        : flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items    : center;
+  padding-left   : 1rem;
+  color          : rgb(57, 57, 57);
+}
+// text layer
+
+.w320-infobox1 {
+  grid-column : 1/11;
+  grid-row    : 2/5;
+  color       : white;
+  padding-left: 1rem;
+  color       : rgb(57, 57, 57);
 }
 
-.w320-infobox {
-  grid-column: 3/11;
-  grid-row   : 2/5;
-  border     : 2px solid #ffc221;
+.w320-infobox2 {
+  grid-column : 1/11;
+  grid-row    : 5/8;
+  color       : white;
+  padding-left: 1rem;
+  z-index     : 1;
+  color       : rgb(57, 57, 57);
+}
+// test layer
+// image layer
+
+.w320-image-holder1 {
+  grid-column     : 5/11;
+  grid-row        : 2/11;
+  background-image: url("../images/mp2.png");
+  background-size : cover;
 }
 
-.w320-image-holder {
-  grid-column: 5/11;
-  grid-row   : 5/11;
-  border     : 2px solid #ffc221;
+.w320-image-holder2 {
+  grid-column     : 1/8;
+  grid-row        : 7/11;
+  background-image: url("../images/mp3.png");
+  background-size : cover;
 }
+// image layer

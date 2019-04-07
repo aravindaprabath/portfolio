@@ -1,0 +1,60 @@
+// New Parent Selector Method with "&__" and "&--"-------------------------------
+
+.aravindas-house {
+    background-color: red;
+
+    &__aravindas-room {
+        background-color: blue;
+
+        &--lightOn {
+            background-color: greenyellow;
+        }
+
+        &--lightOff {
+            background-color: black;
+        }
+    }
+
+    &__power-cut:active~&__aravindas-room {
+        display: none;
+    }
+}
+
+// Old Parent Selector Method with wrapper mixins for BEM-------------------------
+
+@mixin m($element) {
+    &--#{$element} {
+        @content;
+    }
+}
+
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+.aravindas-house {
+    background-color: red;
+
+    @include e(aravindas-room) {
+        background-color: blue;
+
+        @include m(lightOn) {
+            background-color: greenyellow;
+        }
+
+        @include m(lightOff) {
+            background-color: black;
+        }
+
+    }
+
+    @include m(power-cut) {
+        &:active {
+            .aravindas-house__aravindas-room {
+                display: none;
+            }
+        }
+    }
+}

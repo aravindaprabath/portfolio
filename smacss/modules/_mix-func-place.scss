@@ -1,0 +1,10 @@
+$main-color: blue;
+
+.box {
+  $main-color: red;
+  color      : $main-color;
+}
+
+.ball {
+  color: $main-color;
+}

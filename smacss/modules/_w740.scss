@@ -1,0 +1,25 @@
+.w740-title {
+  grid-column     : 1/11;
+  grid-row        : 1/2;
+  color           : white;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  color           : rgb(57, 57, 57);
+  padding         : 0 1rem;
+  background-color: pink;
+  opacity         : 0;
+
+  &__small-text {
+    font-size: 0.8rem;
+  }
+
+  p {
+    margin : 0;
+    padding: 0;
+  }
+  animation       : vanish 0.2s forwards;
+  @media (min-width: 740px) and (max-width:950px) {
+    animation: appear 1s forwards;
+  }
+}

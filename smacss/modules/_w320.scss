@@ -1,15 +1,15 @@
 .w320-title {
-  grid-column    : 1/11;
-  grid-row       : 1/2;
-  color          : white;
-  display        : flex;
-  flex-direction : column;
-  justify-content: center;
-  color          : rgb(57, 57, 57);
-  padding        : 0 1rem;
-  animation      : appear 1s forwards;
+  grid-column     : 1/11;
+  grid-row        : 1/2;
+  color           : white;
+  display         : flex;
+  flex-direction  : column;
+  justify-content : center;
+  color           : rgb(57, 57, 57);
+  padding         : 0 1rem;
+  background-color: green;
 
-  &__small-text {
+  display:no &__small-text {
     font-size: 0.8rem;
   }
 
@@ -17,8 +17,9 @@
     margin : 0;
     padding: 0;
   }
-  @media (min-width: 480px) {
-    animation: vanish 0.5s forwards;
+  animation       : vanish 0.2s forwards;
+  @media (min-width: 0px) and (max-width:530px) {
+    animation: appear 0.5s forwards;
   }
 }
 // text layer
@@ -33,9 +34,9 @@
   flex-direction : column;
   justify-content: center;
   align-items    : flex-start;
-  animation      : appear 1s forwards;
-  @media (min-width: 480px) {
-    animation: vanish 0.5s forwards;
+  animation      : vanish 1s forwards;
+  @media (min-width: 0px) and (max-width:530px) {
+    animation: appear 0.5s forwards;
   }
 }
 
@@ -49,9 +50,9 @@
   justify-content: center;
   align-items    : flex-start;
   padding        : 0 1rem;
-  animation      : appear 1s forwards;
-  @media (min-width: 480px) {
-    animation: vanish 0.5s forwards;
+  animation      : vanish 1s forwards;
+  @media (min-width: 0px) and (max-width:530px) {
+    animation: appear 0.5s forwards;
   }
 }
 
@@ -64,7 +65,6 @@
   align-items    : center;
   z-index        : 1;
   padding        : 0 1rem;
-  animation      : appear 1s forwards;
 
   span {
     height: auto;
@@ -75,9 +75,9 @@
       border-bottom: 1px solid green;
     }
   }
-  // Small devices (landscape phones, 576px and up)
-  @media (min-width: 480px) {
-    animation: vanish 0.5s forwards;
+  animation      : vanish 1s forwards;
+  @media (min-width: 0px) and (max-width:530px) {
+    animation: appear 0.5s forwards;
   }
 }
 
@@ -88,9 +88,9 @@
   align-items     : center;
   padding         : 0 1rem;
   background-color: #393a3e0d;
-  animation       : appear 1s forwards;
-  @media (min-width: 480px) {
-    animation: vanish 0.5s forwards;
+  animation       : vanish 1s forwards;
+  @media (min-width: 0px) and (max-width:530px) {
+    animation: appear 0.5s forwards;
   }
 }
 // test layer
@@ -101,28 +101,9 @@
   grid-row        : 2/11;
   background-image: url("../images/mp2.png");
   background-size : cover;
-  animation       : appear 1s forwards;
-  @media (min-width: 480px) {
-    animation: vanish 1s forwards;
+  animation       : vanish 1s forwards;
+  @media (min-width: 0px) and (max-width:530px) {
+    animation: appear 0.5s forwards;
   }
 }
 // image layer
-// animation
-@keyframes vanish {
-  0% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes appear {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}

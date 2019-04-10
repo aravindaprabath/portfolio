@@ -1,0 +1,10 @@
+.loading-cover {
+  grid-column     : 1/11;
+  grid-row        : 1/11;
+  background-color: white;
+  z-index         : 2;
+  animation       : loadingCover 4s forwards linear;
+  display         : flex;
+  justify-content : center;
+  align-items     : center;
+}
